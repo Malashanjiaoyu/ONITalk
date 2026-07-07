@@ -1,6 +1,6 @@
 # 阶段 12：GitHub 发布工程
 
-状态：MIT 许可证已确认，正在完成首次提交与远程发布。
+状态：已完成；公开仓库、CI 与 v0.10.1 预发行版已上线。
 
 ## 已完成
 
@@ -21,9 +21,18 @@
 - 敏感信息与个人路径扫描：通过。
 - 完整 Release 构建：0 警告、0 错误。
 
-## 尚需用户确认
+## 已确认的发布设置
 
 1. Git 提交作者使用 GitHub 账号 `Malashanjiaoyu` 与隐私邮箱。
 2. 远程仓库使用公开的 `Malashanjiaoyu/ONITalk`。
 
-确认后可一次完成：创建 `LICENSE`、首次提交、创建远程仓库、推送 `main`，随后准备 `1.0.0` 标签和 Release。
+- 许可证：MIT。
+- 可见性：公开。
+
+## 发布结果
+
+- 仓库：`https://github.com/Malashanjiaoyu/ONITalk`
+- 首次提交：`eceda38 Prepare ONITalk for public release`
+- GitHub Actions：首次 `portable-checks` 成功。
+- 预发行版：`https://github.com/Malashanjiaoyu/ONITalk/releases/tag/v0.10.1`
+- 附件：确定性 ZIP 与 SHA-256 校验文件。
