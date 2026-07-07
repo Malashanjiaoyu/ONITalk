@@ -23,6 +23,8 @@ New-Item -ItemType Directory -Path $env:APPDATA -Force | Out-Null
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 & (Join-Path $PSScriptRoot 'check-secrets.ps1')
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+& (Join-Path $PSScriptRoot 'check-workshop.ps1')
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 $project = Join-Path $root 'src\ONITalk.Core.Tests\ONITalk.Core.Tests.csproj'
 $nugetConfig = Join-Path $root 'NuGet.Config'

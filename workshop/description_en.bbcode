@@ -1,0 +1,52 @@
+[h1]ONITalk: Context-aware conversations for your colony[/h1]
+
+ONITalk generates short Duplicant dialogue from current work, surroundings, stress, breath, shared history, and verified colony events. Lines appear above Duplicants and in a draggable, resizable, translucent chat window.
+
+[quote]The mod only generates text. AI never controls Duplicants or changes the simulation.[/quote]
+
+[h2]Features[/h2]
+[list]
+[*]Native chatter, stress, low-breath, and environment triggers
+[*]Controlled two-way conversations of up to three lines
+[*]Relationship, action, and major-event memory isolated by colony GUID
+[*]Local memory retrieval and token budgets without extra model calls
+[*]Movable, resizable, minimizable chat history window
+[*]Protected default prompt plus optional custom style instructions
+[*]Automatic offline fallback and bounded retry backoff
+[*]English, Simplified Chinese, and Spanish
+[*]Base game and Spaced Out! support
+[/list]
+
+[h2]AI providers[/h2]
+
+DeepSeek, OpenAI, OpenRouter, Google Gemini, SiliconFlow, Ollama, Alibaba Bailian/Qwen, Groq, an Anthropic Claude compatibility layer, and custom OpenAI Chat Completions-compatible endpoints.
+
+Offline dialogue is also available and makes no remote requests.
+
+[h2]Quick start[/h2]
+[list=1]
+[*]Subscribe, enable ONITalk, and restart when requested.
+[*]Open Mods from the main menu and select ONITalk > Options.
+[*]Choose a provider, enter its API key, and validate the configuration.
+[*]Load a colony and wait for nearby eligible Duplicants to chat.
+[/list]
+
+[h2]Privacy and cost[/h2]
+
+[b]Your API key is stored as plain text in the local ONITalk config. Never upload that file.[/b]
+
+Remote requests may include Duplicant names, current state, trigger context, and locally selected memory summaries. ONITalk operates no relay server and collects no telemetry. Provider pricing, retention, and privacy terms still apply. Continuous dialogue and testing mode increase request frequency; offline mode sends nothing.
+
+[h2]Compatibility and support[/h2]
+
+- Current version: 0.10.1 pre-release
+- Base game: tested
+- Spaced Out!: tested
+- Fully restart the game after DLL updates
+- Failed API calls fall back to offline lines; Player.log contains readable diagnostics
+
+[url=https://github.com/Malashanjiaoyu/ONITalk]Source, documentation, and issue tracker[/url]
+
+[url=https://github.com/Malashanjiaoyu/ONITalk/releases/tag/v0.10.1]GitHub v0.10.1 pre-release[/url]
+
+ONITalk is released under the MIT License. Third-party notices for PLib and Harmony are included. This project is not affiliated with Klei Entertainment.

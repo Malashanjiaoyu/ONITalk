@@ -1,0 +1,56 @@
+[h1]ONITalk：让复制人真正聊起殖民地生活[/h1]
+
+ONITalk 会根据复制人的当前工作、环境、压力、呼吸状态、近期共同经历和殖民地事件生成简短台词。台词会显示在头顶，也会进入可拖动、可缩放的半透明聊天窗口。
+
+[quote]模组只生成文本，不会让 AI 控制复制人或修改游戏模拟。[/quote]
+
+[h2]主要功能[/h2]
+[list]
+[*]原生闲聊、压力、缺氧和环境状态触发
+[*]最多三句的受控双向连续对话
+[*]按殖民地 GUID 隔离的关系、行动与重大事件记忆
+[*]本地智能记忆检索与 Token 预算，不额外调用模型
+[*]半透明聊天历史窗口：拖动、缩放、最小化和清空
+[*]默认／自定义提示词，以及不调用 API 的本地预览
+[*]远程错误自动切换离线台词，并限制重复失败请求
+[*]英语、简体中文和西班牙语
+[*]支持基础游戏与 Spaced Out!
+[/list]
+
+[h2]支持的 AI 接口[/h2]
+
+DeepSeek、OpenAI、OpenRouter、Google Gemini、SiliconFlow、Ollama、阿里云百炼／通义千问、Groq、Anthropic Claude 兼容层，以及自定义 OpenAI Chat Completions 兼容接口。
+
+也可以选择“离线台词”，完全不使用远程 API。
+
+[h2]快速开始[/h2]
+[list=1]
+[*]订阅并启用 ONITalk，按游戏提示重启。
+[*]在主菜单打开“模组”，找到 ONITalk，点击“选项”。
+[*]选择服务商，填写 API Key，然后点击“验证配置”。
+[*]进入存档，附近复制人满足触发条件后会开始对话。
+[/list]
+
+[h2]隐私与费用[/h2]
+
+[b]API Key 以明文保存在你的本机 ONITalk 配置文件中。不要上传该文件。[/b]
+
+使用远程模型时，复制人名称、当前状态、触发原因和本地选中的记忆摘要会发送到你配置的 Endpoint。ONITalk 不运营中转服务器，也不收集遥测。费用和数据保留遵循你选择的 AI 服务商规则。
+
+连续对话和高频测试模式会增加 API 请求次数。离线模式不会发送网络请求。
+
+[h2]兼容性与排错[/h2]
+
+- 当前版本：0.10.1 预发行版
+- 基础游戏：已验证
+- Spaced Out!：已验证
+- 模组更新后如果没有出现“选项”按钮，请完全重启游戏
+- API 失败时仍会显示离线台词；详细错误可查看 Player.log
+
+[h2]开源与反馈[/h2]
+
+[url=https://github.com/Malashanjiaoyu/ONITalk]GitHub 源码、安装文档与问题反馈[/url]
+
+[url=https://github.com/Malashanjiaoyu/ONITalk/releases/tag/v0.10.1]v0.10.1 GitHub 预发行版[/url]
+
+ONITalk 使用 MIT License。PLib 与 Harmony 的许可说明随源码和发布包保留。本项目与 Klei Entertainment 无隶属关系。
