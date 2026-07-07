@@ -1,0 +1,17 @@
+title: "ONITalk - Context-Aware Duplicant Conversations"
+version: "0.10.1"
+visibility_for_first_upload: "Hidden"
+supported_content:
+  - "Oxygen Not Included"
+  - "Spaced Out!"
+languages:
+  - "English"
+  - "Simplified Chinese"
+  - "Spanish"
+tags:
+  - "Utilities"
+  - "UI"
+  - "Translation"
+  - "Spaced Out Compatible"
+repository: "https://github.com/Malashanjiaoyu/ONITalk"
+release: "https://github.com/Malashanjiaoyu/ONITalk/releases/tag/v0.10.1"

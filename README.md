@@ -32,6 +32,7 @@
 - [安全报告](SECURITY.md)
 - [第三方许可说明](THIRD_PARTY_NOTICES.md)
 - [1.0.0 发布说明草案](docs/RELEASE_NOTES_1.0.md)
+- [Steam 创意工坊发布素材](workshop/UPLOAD_CHECKLIST.md)
 
 ## 长期记忆管理
 
