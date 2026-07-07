@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net48;netstandard2.1</TargetFrameworks>
+    <Title>PLib Core</Title>
+    <AssemblyTitle>PLib.Core</AssemblyTitle>
+    <Version>$(PLibVersion)</Version>
+    <UsesPLib>false</UsesPLib>
+    <RootNamespace>PeterHan.PLib.Core</RootNamespace>
+    <AssemblyVersion>$(PLibVersion)</AssemblyVersion>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>  
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <DistributeMod>false</DistributeMod>
+    <PLibCore>true</PLibCore>
+    <Platforms>Vanilla;Mergedown</Platforms>
+    <PLibVersionFileContent>
+namespace PeterHan.PLib {
+  public static class PVersion {
+    public const string VERSION = "$(PLibVersion)"%3B
+  }
+}
+    </PLibVersionFileContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DocumentationFile>bin\$(Platform)\Release\PLibCore.xml</DocumentationFile>
+  </PropertyGroup>
+  <Target Name="WriteModVersionFile" BeforeTargets="PreBuildEvent">
+    <WriteLinesToFile File="$(IntermediateOutputPath)\PVersion.cs" Overwrite="true" Lines="$(PLibVersionFileContent)"/>
+  </Target>
+  <ItemGroup>
+    <Compile Include="$(IntermediateOutputPath)\PVersion.cs" />
+  </ItemGroup>
+</Project>

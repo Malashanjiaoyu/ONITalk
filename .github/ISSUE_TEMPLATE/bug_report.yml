@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a reproducible ONITalk problem.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: dropdown
+    id: content
+    attributes:
+      label: Game content
+      options:
+        - Base game
+        - Spaced Out!
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: ONITalk version
+      placeholder: 0.10.1
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Explain what you did and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Player.log excerpt
+      description: Remove API keys, personal paths, colony memories, and unrelated content before posting.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy check
+      options:
+        - label: I verified that the report contains no API Key or private colony-memory export.
+          required: true

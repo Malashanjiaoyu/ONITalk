@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net48;netstandard2.1</TargetFrameworks>
+    <Title>PLib Options</Title>
+    <AssemblyTitle>PLib.Options</AssemblyTitle>
+    <Version>$(PLibVersion)</Version>
+    <UsesPLib>false</UsesPLib>
+    <RootNamespace>PeterHan.PLib.Options</RootNamespace>
+    <AssemblyVersion>$(PLibVersion)</AssemblyVersion>
+    <DistributeMod>false</DistributeMod>
+    <PLibCore>true</PLibCore>
+    <Platforms>Vanilla;Mergedown</Platforms>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DocumentationFile>bin\$(Platform)\Release\PLibOptions.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../PLibCore/PLibCore.csproj" />
+    <ProjectReference Include="../PLibUI/PLibUI.csproj" />
+  </ItemGroup>
+</Project>

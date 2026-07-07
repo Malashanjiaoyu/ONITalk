@@ -1,0 +1,28 @@
+# Build and IDE output
+bin/
+obj/
+.vs/
+.idea/
+.dotnet-home/
+artifacts/
+*.user
+
+# Local Codex/editor state
+.agents/
+.codex/
+.obsidian/
+PROJECT_CONTEXT.md
+docs/ENVIRONMENT_REPORT.md
+
+# Local game data and secrets
+ONITalk.local.json
+ONITalk.json
+*.pre-v*.bak
+memory/
+exports/
+Player.log
+*.sav
+
+# OS noise
+Thumbs.db
+.DS_Store

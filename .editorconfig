@@ -1,0 +1,14 @@
+root = true
+
+# PLib 4.25 predates nullable annotations. Keep nullable analysis enabled for
+# ONITalk while suppressing only diagnostics emitted by the vendored sources.
+[vendor/PLib/**/*.cs]
+dotnet_diagnostic.CS0168.severity = none
+dotnet_diagnostic.CS0618.severity = none
+dotnet_diagnostic.CS8600.severity = none
+dotnet_diagnostic.CS8601.severity = none
+dotnet_diagnostic.CS8602.severity = none
+dotnet_diagnostic.CS8603.severity = none
+dotnet_diagnostic.CS8604.severity = none
+dotnet_diagnostic.CS8618.severity = none
+dotnet_diagnostic.CS8625.severity = none

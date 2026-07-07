@@ -1,0 +1,818 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ONITalk 0.10\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Application: Oxygen Not Included\n"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.GENERAL"
+msgid "General"
+msgstr "通用"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.PROVIDER"
+msgid "AI provider"
+msgstr "AI 服务商"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.FREQUENCY"
+msgid "Conversation frequency"
+msgstr "对话频率"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.ADVANCED"
+msgid "Advanced"
+msgstr "高级"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.CHAT_WINDOW"
+msgid "Chat window"
+msgstr "聊天窗口"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.CHARACTER_MEMORY"
+msgid "Character memory"
+msgstr "角色记忆"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.ACTION_MEMORY"
+msgid "Action memory"
+msgstr "行动记忆"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.MEMORY_INJECTION"
+msgid "Memory injection"
+msgstr "记忆注入"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.CONTINUOUS_DIALOGUE"
+msgid "Continuous dialogue"
+msgstr "连续对话"
+
+msgctxt "STRINGS.ONITALK.CATEGORIES.PROMPT"
+msgid "Prompt customization"
+msgstr "提示词定制"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.ENABLE"
+msgid "Use custom style prompt"
+msgstr "使用自定义风格提示词"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.ENABLE_TOOLTIP"
+msgid "Adds your style instructions after ONITalk's protected core prompt."
+msgstr "在 ONITalk 受保护的核心提示词后追加你的风格要求。"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.VARIABLES"
+msgid "Variables: {language}, {maxCharacters}, {speaker}, {listener}, {trigger}"
+msgstr "变量：{language}、{maxCharacters}、{speaker}、{listener}、{trigger}"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.EDITOR_TOOLTIP"
+msgid "Custom style instructions. Core safety and factual rules cannot be overridden."
+msgstr "自定义风格要求；无法覆盖核心安全和事实规则。"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.STATUS_OK"
+msgid "Template variables are valid."
+msgstr "模板变量有效。"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.STATUS_UNKNOWN"
+msgid "Unknown variables: {0}"
+msgstr "未知变量：{0}"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.RESET"
+msgid "Restore starter template"
+msgstr "恢复起始模板"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.COPY_DEFAULT"
+msgid "Copy default prompt"
+msgstr "复制默认提示词"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.COPIED"
+msgid "Default prompt copied to clipboard."
+msgstr "默认提示词已复制到剪贴板。"
+msgctxt "STRINGS.ONITALK.UI.PROMPT.PREVIEW"
+msgid "Preview final prompt"
+msgstr "预览最终提示词"
+msgctxt "STRINGS.ONITALK.OPTIONS.PROMPT_CONFIGURATION.NAME"
+msgid "Prompt configuration"
+msgstr "提示词配置"
+msgctxt "STRINGS.ONITALK.OPTIONS.PROMPT_CONFIGURATION.TOOLTIP"
+msgid "Choose the default prompt or add custom style instructions and preview the result."
+msgstr "使用默认提示词或追加自定义风格，并预览最终结果。"
+
+msgctxt "STRINGS.ONITALK.LANGUAGES.FOLLOW_GAME"
+msgid "Follow game language"
+msgstr "跟随游戏语言"
+
+msgctxt "STRINGS.ONITALK.LANGUAGES.ENGLISH"
+msgid "English"
+msgstr "英语"
+
+msgctxt "STRINGS.ONITALK.LANGUAGES.SIMPLIFIED_CHINESE"
+msgid "Simplified Chinese"
+msgstr "简体中文"
+
+msgctxt "STRINGS.ONITALK.LANGUAGES.SPANISH"
+msgid "Spanish"
+msgstr "西班牙语"
+
+msgctxt "STRINGS.ONITALK.MEMORY_PRESETS.LIGHT"
+msgid "Light"
+msgstr "轻量"
+
+msgctxt "STRINGS.ONITALK.MEMORY_PRESETS.BALANCED"
+msgid "Balanced"
+msgstr "平衡"
+
+msgctxt "STRINGS.ONITALK.MEMORY_PRESETS.RICH"
+msgid "Rich"
+msgstr "丰富"
+
+msgctxt "STRINGS.ONITALK.MEMORY_PRESETS.CUSTOM"
+msgid "Custom"
+msgstr "自定义"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.INTERFACE_LANGUAGE.NAME"
+msgid "Interface language"
+msgstr "界面语言"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.INTERFACE_LANGUAGE.TOOLTIP"
+msgid "Choose ONITalk's interface language. Close and reopen this window after saving."
+msgstr "选择 ONITalk 的界面语言；保存后关闭并重新打开此窗口生效。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.SELECT_TOOLTIP"
+msgid "Choose a provider preset. Endpoint and model remain editable."
+msgstr "选择服务商预设；Endpoint 和模型仍可手动修改。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.ENDPOINT_LABEL"
+msgid "Endpoint"
+msgstr "Endpoint"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.ENDPOINT_TOOLTIP"
+msgid "Complete Chat Completions endpoint URL"
+msgstr "完整 Chat Completions 地址"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.MODEL_LABEL"
+msgid "Model"
+msgstr "模型"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.MODEL_TOOLTIP"
+msgid "Model ID shown in the provider console"
+msgstr "供应商控制台显示的模型 ID"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.API_KEY_LABEL"
+msgid "API Key"
+msgstr "API Key"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.API_KEY_TOOLTIP"
+msgid "Stored locally as plain text and never written to logs"
+msgstr "本地明文保存，但不会写入日志"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.STATUS_NOT_VALIDATED"
+msgid "The current configuration has not been validated."
+msgstr "尚未验证当前配置。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.STATUS_VALIDATING"
+msgid "Validating, please wait..."
+msgstr "正在验证，请稍候……"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.STATUS_UI_ERROR"
+msgid "Validation interface error: {0}"
+msgstr "验证界面发生错误：{0}"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.KEY_REQUIRED"
+msgid " API Key required."
+msgstr " 需要 API Key。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.KEY_OPTIONAL"
+msgid " API Key may be left empty."
+msgstr " API Key 可留空。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.VALIDATE_BUTTON"
+msgid "Validate configuration"
+msgstr "验证配置"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.VALIDATE_TOOLTIP"
+msgid "Sends one minimal request without creating dialogue or changing memory."
+msgstr "发送一次最小请求；不会生成游戏台词或修改记忆。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.DEEPSEEK_NAME"
+msgid "DeepSeek"
+msgstr "DeepSeek"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.DEEPSEEK_DESCRIPTION"
+msgid "Strong Chinese output and good value."
+msgstr "中文表现和性价比较好。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.OPENAI_NAME"
+msgid "OpenAI"
+msgstr "OpenAI"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.OPENAI_DESCRIPTION"
+msgid "Official OpenAI Chat Completions endpoint."
+msgstr "OpenAI 官方 Chat Completions 接口。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.OPENROUTER_NAME"
+msgid "OpenRouter"
+msgstr "OpenRouter"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.OPENROUTER_DESCRIPTION"
+msgid "Access models from multiple providers through one endpoint."
+msgstr "使用一个接口选择多个厂商的模型。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.GEMINI_NAME"
+msgid "Google Gemini"
+msgstr "Google Gemini"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.GEMINI_DESCRIPTION"
+msgid "Google Gemini's OpenAI-compatible endpoint."
+msgstr "Google Gemini 的 OpenAI 兼容接口。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.SILICONFLOW_NAME"
+msgid "SiliconFlow"
+msgstr "SiliconFlow 硅基流动"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.SILICONFLOW_DESCRIPTION"
+msgid "Multi-model OpenAI-compatible platform available in China."
+msgstr "国内可用的多模型兼容平台。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.OLLAMA_NAME"
+msgid "Ollama (local)"
+msgstr "Ollama 本地模型"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.OLLAMA_DESCRIPTION"
+msgid "Runs models locally and does not require a real API Key."
+msgstr "在本机运行模型，不需要真实 API Key。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.BAILIAN_NAME"
+msgid "Alibaba Cloud Model Studio / Qwen"
+msgstr "阿里云百炼 / 通义千问"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.BAILIAN_DESCRIPTION"
+msgid "The endpoint can be changed for a regional or Workspace-specific address."
+msgstr "可将地址改为对应地域和 Workspace 的专属 Endpoint。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.GROQ_NAME"
+msgid "Groq"
+msgstr "Groq"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.GROQ_DESCRIPTION"
+msgid "Low-latency OpenAI-compatible inference service."
+msgstr "强调低延迟的 OpenAI 兼容推理服务。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.CLAUDE_NAME"
+msgid "Anthropic Claude (compatibility layer)"
+msgstr "Anthropic Claude（兼容层）"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.CLAUDE_DESCRIPTION"
+msgid "Uses Anthropic's official OpenAI compatibility layer. Native advanced features may be added later."
+msgstr "使用 Anthropic 官方 OpenAI 兼容层；高级能力后续再接原生 API。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.CUSTOM_NAME"
+msgid "Custom compatible endpoint"
+msgstr "自定义兼容接口"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.CUSTOM_DESCRIPTION"
+msgid "For compatible services such as Kimi, GLM, MiniMax, and LM Studio."
+msgstr "适用于 Kimi、GLM、MiniMax、LM Studio 等兼容接口。"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.ECHO_NAME"
+msgid "Offline dialogue"
+msgstr "离线台词"
+
+msgctxt "STRINGS.ONITALK.UI.PROVIDER.PROFILES.ECHO_DESCRIPTION"
+msgid "Uses built-in offline lines without calling a remote endpoint."
+msgstr "不调用任何远程接口，使用内置离线台词。"
+
+msgctxt "STRINGS.ONITALK.UI.CHAT.TITLE"
+msgid "ONITalk conversations"
+msgstr "ONITalk 对话"
+
+msgctxt "STRINGS.ONITALK.UI.CHAT.LIBRARY_BUTTON"
+msgid "L"
+msgstr "库"
+
+msgctxt "STRINGS.ONITALK.UI.CHAT.LIBRARY_TOOLTIP"
+msgid "View, export, or clear long-term memory"
+msgstr "查看、导出或清空长期记忆"
+
+msgctxt "STRINGS.ONITALK.UI.CHAT.MEMORY_BUTTON"
+msgid "M"
+msgstr "忆"
+
+msgctxt "STRINGS.ONITALK.UI.CHAT.MEMORY_TOOLTIP"
+msgid "View memory injection and scoring from the previous request"
+msgstr "查看上一次请求的记忆注入与评分"
+
+msgctxt "STRINGS.ONITALK.UI.CHAT.CLEAR_BUTTON"
+msgid "C"
+msgstr "清"
+
+msgctxt "STRINGS.ONITALK.UI.CHAT.CLEAR_TOOLTIP"
+msgid "Clear chat history for this game session"
+msgstr "清空本次游戏的聊天历史"
+
+msgctxt "STRINGS.ONITALK.UI.CHAT.MINIMIZE_TOOLTIP"
+msgid "Minimize or restore the chat window"
+msgstr "最小化或恢复聊天窗口"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_PREVIEW.TITLE"
+msgid "ONITalk memory injection preview"
+msgstr "ONITalk 记忆注入预览"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_PREVIEW.CLOSE_TOOLTIP"
+msgid "Close preview"
+msgstr "关闭预览"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.TITLE"
+msgid "ONITalk long-term memory"
+msgstr "ONITalk 长期记忆管理"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CLOSE_TOOLTIP"
+msgid "Close memory manager"
+msgstr "关闭记忆管理器"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.REFRESH_BUTTON"
+msgid "Refresh"
+msgstr "刷新"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.REFRESH_TOOLTIP"
+msgid "Reload the summary currently held in memory"
+msgstr "重新读取当前内存中的摘要"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.EXPORT_BUTTON"
+msgid "Export JSON"
+msgstr "导出 JSON"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.EXPORT_TOOLTIP"
+msgid "Export complete memory without the API Key"
+msgstr "导出完整记忆，不包含 API Key"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CLEAR_BUTTON"
+msgid "Clear long-term memory"
+msgstr "清空长期记忆"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CLEAR_TOOLTIP"
+msgid "Requires two confirmations and does not clear chat history"
+msgstr "需要两次确认；不清聊天窗口"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.NO_INFORMATION"
+msgid "No memory information is available."
+msgstr "暂无记忆信息。"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.READ_FAILED"
+msgid "Failed to read memory: {0}"
+msgstr "读取记忆失败：{0}"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.EXPORT_UNAVAILABLE"
+msgid "The export function is not connected."
+msgstr "导出功能尚未连接。"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.EXPORT_FAILED"
+msgid "Export failed: {0}"
+msgstr "导出失败：{0}"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CLEAR_CONFIRM"
+msgid "Clear all long-term relationship, action, and event memory for the current colony?\n\nChat history will not be deleted. Exporting a backup first is recommended."
+msgstr "清空当前殖民地的全部长期关系、行动和事件记忆？\n\n当前聊天窗口历史不会删除。建议先导出备份。"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CLEAR_FINAL_CONFIRM"
+msgid "Final confirmation: this immediately overwrites the memory file on disk and cannot be undone."
+msgstr "最后确认：该操作会立即覆盖磁盘记忆文件，且无法撤销。"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CONFIRM_CLEAR_BUTTON"
+msgid "Confirm clear"
+msgstr "确认清空"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CONTINUE_BUTTON"
+msgid "Continue"
+msgstr "继续"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CANCEL_BUTTON"
+msgid "Cancel"
+msgstr "取消"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CLEAR_UNAVAILABLE"
+msgid "The clear function is not connected."
+msgstr "清空功能尚未连接。"
+
+msgctxt "STRINGS.ONITALK.UI.MEMORY_LIBRARY.CLEAR_FAILED"
+msgid "Clear failed: {0}"
+msgstr "清空失败：{0}"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.OFFLINE_VALID"
+msgid "Offline dialogue does not require an API connection. Configuration is valid."
+msgstr "离线台词模式无需连接 API。配置有效。"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.ENDPOINT_REQUIRED"
+msgid "Enter an API endpoint."
+msgstr "请填写 API Endpoint。"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.ENDPOINT_INVALID"
+msgid "Endpoint must be a valid HTTP or HTTPS URL."
+msgstr "Endpoint 必须是有效的 HTTP 或 HTTPS 地址。"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.MODEL_REQUIRED"
+msgid "Enter a model name."
+msgstr "请填写模型名称。"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.API_KEY_REQUIRED"
+msgid "{0} requires an API Key."
+msgstr "{0} 需要 API Key。"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.SUCCESS"
+msgid "Connection successful · Model {0} · {1} ms"
+msgstr "连接成功 · 模型 {0} · {1} ms"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.CANCELLED"
+msgid "Validation was cancelled or timed out."
+msgstr "验证已取消或请求超时。"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.INVALID_JSON"
+msgid "The response is not valid JSON."
+msgstr "响应不是有效 JSON。"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.EMPTY_RESPONSE"
+msgid "The response contains no dialogue text."
+msgstr "响应中没有台词文本。"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.CONNECTION_FAILED"
+msgid "Connection failed: {0}"
+msgstr "连接失败：{0}"
+
+msgctxt "STRINGS.ONITALK.UI.VALIDATION.PROVIDER_REJECTED"
+msgid "The provider rejected the request"
+msgstr "服务商拒绝了请求"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.NO_INJECTION_PREVIEW"
+msgid "No memory injection has been recorded. Wait for the next ONITalk line and try again."
+msgstr "尚无记忆注入记录。请等待下一次 ONITalk 对话生成后再查看。"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.MEMORY_NOT_CONNECTED"
+msgid "No colony memory is connected. Enter a saved game and try again."
+msgstr "尚未连接当前殖民地记忆。请进入存档后再查看。"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.EXPORT_NOT_CONNECTED"
+msgid "Export failed: no colony memory is connected."
+msgstr "导出失败：尚未连接当前殖民地记忆。"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.EXPORT_SUCCESS"
+msgid "Export successful:\n{0}\n\nThe file contains colony memory only and never includes the API Key."
+msgstr "导出成功：\n{0}\n\n文件只包含殖民地记忆，不包含 API Key。"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.EXPORT_FAILED"
+msgid "Export failed: {0}"
+msgstr "导出失败：{0}"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.CLEAR_NOT_CONNECTED"
+msgid "Clear failed: no colony memory is connected."
+msgstr "清空失败：尚未连接当前殖民地记忆。"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.CLEAR_SUCCESS"
+msgid "Long-term memory was cleared and saved. Chat history was not affected."
+msgstr "长期记忆已清空并保存。当前聊天窗口历史未受影响。"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.CLEAR_SAVE_FAILED"
+msgid "Long-term memory was cleared in memory, but saving to disk failed. Check Player.log."
+msgstr "内存中的长期记忆已清空，但写入磁盘失败；请检查 Player.log。"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.SERVICE_NOT_INITIALIZED"
+msgid "The ONITalk service has not been initialized."
+msgstr "ONITalk 服务尚未初始化。"
+
+msgctxt "STRINGS.ONITALK.UI.RUNTIME.DIAGNOSTIC_BUBBLE"
+msgid "ONITalk test: the display pipeline is working."
+msgstr "ONITalk 测试：显示链路正常。"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.COLONY"
+msgid "Colony: {0}"
+msgstr "殖民地：{0}"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.ID"
+msgid "ID: {0}"
+msgstr "ID：{0}"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.COUNTS"
+msgid "Relationships: {0} pairs · Recorded lines: {1} · Actions: {2} · Events: {3}"
+msgstr "关系：{0} 对 · 已记录台词：{1} 句 · 行动：{2} 条 · 事件：{3} 条"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.SUMMARY_NOTE"
+msgid "This is the latest summary. Export JSON contains the complete memory."
+msgstr "以下为最新摘要；导出 JSON 包含完整记忆。"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.RELATIONSHIPS_HEADING"
+msgid "[Relationship conversations]"
+msgstr "【关系对话】"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.ACTIONS_HEADING"
+msgid "[Action memory]"
+msgstr "【行动记忆】"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.EVENTS_HEADING"
+msgid "[Colony events]"
+msgstr "【殖民地事件】"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.NO_RECORDS"
+msgid "No records"
+msgstr "暂无记录"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.LINE_COUNT"
+msgid "{0} lines"
+msgstr "{0} 句"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.CYCLE"
+msgid "Cycle {0}"
+msgstr "周期 {0}"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.LATEST"
+msgid "Latest: {0}: {1}"
+msgstr "最近：{0}：{1}"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.IMPORTANCE"
+msgid "Importance {0}"
+msgstr "重要性 {0}"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.ROUTINE_CONSTRUCTION"
+msgid "Routine construction"
+msgstr "日常工程"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.OMITTED"
+msgid "... {0} more entries are not shown in this summary"
+msgstr "……另有 {0} 条未在摘要中显示"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.UNKNOWN"
+msgid "Unknown"
+msgstr "未知"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.UNKNOWN_RELATION"
+msgid "Unknown relationship"
+msgstr "未知关系"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_LIBRARY.UNNAMED_COLONY"
+msgid "Unnamed colony"
+msgstr "未命名殖民地"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.CONTEXT"
+msgid "Context: {0}"
+msgstr "上下文：{0}"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.BUDGET"
+msgid "Budget: about {0} / {1} tokens"
+msgstr "预算：约 {0} / {1} tokens"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.COUNTS"
+msgid "Candidates: {0}, selected: {1}"
+msgstr "候选：{0}，选中：{1}"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.NONE"
+msgid "No memory met the current budget and quota requirements."
+msgstr "没有记忆达到当前预算和配额要求。"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.ITEM_HEADER"
+msgid "[{0}] Score {1} · about {2} tokens"
+msgstr "[{0}] 评分 {1} · 约 {2} tokens"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.BREAKDOWN"
+msgid "Relevance {0}  Recency {1}  Importance {2}  Participants {3}  Type {4}"
+msgstr "相关 {0}  时间 {1}  重要 {2}  人物 {3}  类型 {4}"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.KIND_RELATIONSHIP"
+msgid "Relationship conversation"
+msgstr "关系对话"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.KIND_SPEAKER_ACTION"
+msgid "Speaker action"
+msgstr "说话者行动"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.KIND_LISTENER_ACTION"
+msgid "Listener action"
+msgstr "听者行动"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.KIND_COLONY_EVENT"
+msgid "Colony event"
+msgstr "殖民地事件"
+
+msgctxt "STRINGS.ONITALK.CORE.MEMORY_PREVIEW.KIND_MEMORY"
+msgid "Memory"
+msgstr "记忆"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.ENABLED.NAME"
+msgid "Enable ONITalk"
+msgstr "启用 ONITalk"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.ENABLED.TOOLTIP"
+msgid "When disabled, ONITalk will not generate any new dialogue."
+msgstr "关闭后不会再生成任何新台词。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.PROVIDER_CONFIGURATION.NAME"
+msgid "Provider configuration"
+msgstr "服务商配置"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.PROVIDER_CONFIGURATION.TOOLTIP"
+msgid "Choose a common provider or enter a custom OpenAI-compatible endpoint."
+msgstr "选择常用服务商，或填写自定义 OpenAI-Compatible 接口。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.AMBIENT_CHATTER_INTERVAL_SECONDS.NAME"
+msgid "Ambient chatter interval (seconds)"
+msgstr "普通闲聊间隔（秒）"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.AMBIENT_CHATTER_INTERVAL_SECONDS.TOOLTIP"
+msgid "How often nearby Duplicants may chat when there is no urgent condition."
+msgstr "没有紧急状态时，附近复制人之间产生闲聊的间隔。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.PAIR_COOLDOWN_SECONDS.NAME"
+msgid "Duplicant pair cooldown (seconds)"
+msgstr "同一对复制人冷却（秒）"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.PAIR_COOLDOWN_SECONDS.TOOLTIP"
+msgid "Minimum wait before the same pair of Duplicants can talk again."
+msgstr "同一对复制人再次对话前至少等待多久。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.GLOBAL_COOLDOWN_SECONDS.NAME"
+msgid "Global cooldown (seconds)"
+msgstr "全局冷却（秒）"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.GLOBAL_COOLDOWN_SECONDS.TOOLTIP"
+msgid "Minimum interval between any two ONITalk lines in the colony."
+msgstr "整个殖民地两句 ONITalk 台词之间的最短间隔。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CONVERSATION_REPLIES_ENABLED.NAME"
+msgid "Allow listener replies"
+msgstr "允许听者回应"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CONVERSATION_REPLIES_ENABLED.TOOLTIP"
+msgid "Allows the listener to reply after an opening line. This can increase API usage."
+msgstr "开启后，一次触发可以继续生成听者回复；会增加 API 调用次数。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.REPLY_CHANCE_PERCENT.NAME"
+msgid "Listener reply chance (%)"
+msgstr "听者回应概率（%）"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.REPLY_CHANCE_PERCENT.TOOLTIP"
+msgid "Chance that an opening line develops into a continued conversation."
+msgstr "决定一条起始台词是否发展为连续对话。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAX_CONVERSATION_LINES.NAME"
+msgid "Maximum lines per conversation"
+msgstr "每次对话最多台词数"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAX_CONVERSATION_LINES.TOOLTIP"
+msgid "Includes the opening line. A value of 2 means one opening line and one reply."
+msgstr "包含第一句；设为 2 时是说话者一句、听者回应一句。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.REPLY_DELAY_SECONDS.NAME"
+msgid "Reply delay (seconds)"
+msgstr "回应间隔（秒）"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.REPLY_DELAY_SECONDS.TOOLTIP"
+msgid "How long the listener waits before replying to the previous line."
+msgstr "上一句显示后，听者等待多久再回应。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.TESTING_MODE.NAME"
+msgid "High-frequency testing mode"
+msgstr "高频测试模式"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.TESTING_MODE.TOOLTIP"
+msgid "For testing only. This greatly increases dialogue and API request frequency."
+msgstr "仅用于测试；会明显增加台词和 API 调用频率。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.TESTING_CHATTER_INTERVAL_SECONDS.NAME"
+msgid "Testing chatter interval (seconds)"
+msgstr "测试闲聊间隔（秒）"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.TESTING_CHATTER_INTERVAL_SECONDS.TOOLTIP"
+msgid "Used only while high-frequency testing mode is enabled."
+msgstr "仅在高频测试模式开启时使用。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAX_CONVERSATION_DISTANCE.NAME"
+msgid "Maximum conversation distance"
+msgstr "最大交谈距离"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAX_CONVERSATION_DISTANCE.TOOLTIP"
+msgid "Only Duplicants within this distance can talk to each other."
+msgstr "只让这个距离以内的复制人互相说话。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.REQUEST_TIMEOUT_SECONDS.NAME"
+msgid "API timeout (seconds)"
+msgstr "API 超时（秒）"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.REQUEST_TIMEOUT_SECONDS.TOOLTIP"
+msgid "Cancels a request after this duration and uses offline dialogue instead."
+msgstr "超过该时间会取消请求并改用离线台词。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.TEMPERATURE.NAME"
+msgid "Dialogue randomness"
+msgstr "台词随机度"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.TEMPERATURE.TOOLTIP"
+msgid "Higher values produce more varied dialogue. The valid range depends on the provider."
+msgstr "值越高台词越活泼；可用范围取决于当前服务商。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAX_CHARACTERS.NAME"
+msgid "Maximum characters per line"
+msgstr "单句最大字符数"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAX_CHARACTERS.TOOLTIP"
+msgid "Generated speech-bubble text is limited to this length."
+msgstr "生成后的气泡文本会被限制在这个长度以内。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAX_TOKENS.NAME"
+msgid "Maximum API output tokens"
+msgstr "API 最大输出 Token"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAX_TOKENS.TOOLTIP"
+msgid "Short dialogue usually does not need a large output limit."
+msgstr "短台词通常不需要很高的输出上限。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_WINDOW_ENABLED.NAME"
+msgid "Show chat history window"
+msgstr "显示聊天历史窗口"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_WINDOW_ENABLED.TOOLTIP"
+msgid "Continuously displays ONITalk conversation history in the game interface."
+msgstr "在游戏界面持续显示 ONITalk 对话历史。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_HISTORY_LIMIT.NAME"
+msgid "Chat history limit"
+msgstr "历史消息上限"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_HISTORY_LIMIT.TOOLTIP"
+msgid "Keeps only the newest messages to limit memory usage during long games."
+msgstr "只保留最新的若干条消息，避免长期游戏占用过多内存。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_FONT_SIZE.NAME"
+msgid "Chat font size"
+msgstr "聊天字体大小"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_FONT_SIZE.TOOLTIP"
+msgid "Adjusts dialogue text size inside the history window."
+msgstr "调整历史窗口内的台词字号。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_WINDOW_OPACITY.NAME"
+msgid "Window background opacity"
+msgstr "窗口背景不透明度"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_WINDOW_OPACITY.TOOLTIP"
+msgid "Lower values obstruct less of the game view. Text and buttons remain visible."
+msgstr "数值越低越不挡视野；文字和按钮不会一起变淡。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_WINDOW_AUTO_FADE.NAME"
+msgid "Darken background on hover"
+msgstr "鼠标悬停时加深背景"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.CHAT_WINDOW_AUTO_FADE.TOOLTIP"
+msgid "Increases background opacity while the pointer is over the window."
+msgstr "鼠标移入窗口时自动提高背景不透明度，移开后恢复。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.PERSISTENT_MEMORY_ENABLED.NAME"
+msgid "Enable long-term colony memory"
+msgstr "启用殖民地长期记忆"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.PERSISTENT_MEMORY_ENABLED.TOOLTIP"
+msgid "Stores recent conversations and familiarity per colony. Different saves never share memory."
+msgstr "按殖民地保存复制人之间的近期对话和熟悉程度；不同存档不会混用。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MEMORY_LINES_PER_PAIR.NAME"
+msgid "Memory lines per Duplicant pair"
+msgstr "每对复制人记忆条数"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MEMORY_LINES_PER_PAIR.TOOLTIP"
+msgid "Number of recent shared lines available to dialogue generation."
+msgstr "送入台词提示词的最近共同对话数量。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MEMORY_MAX_PAIRS.NAME"
+msgid "Maximum stored relationships"
+msgstr "最多保存关系数"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MEMORY_MAX_PAIRS.TOOLTIP"
+msgid "Limits the colony memory file size by removing the least recently updated relationships."
+msgstr "限制殖民地关系记忆文件大小；超过后移除最久未更新的关系。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.ACTION_MEMORY_ENABLED.NAME"
+msgid "Enable action memory"
+msgstr "启用行动记忆"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.ACTION_MEMORY_ENABLED.TOOLTIP"
+msgid "Records important completed actions such as building, repair, digging, and fabrication."
+msgstr "记录复制人已经完成的建造、修理、挖掘、制作等重要行动。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.ACTION_MEMORY_CAPACITY_PER_DUPE.NAME"
+msgid "Action memories per Duplicant"
+msgstr "每人行动记忆上限"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.ACTION_MEMORY_CAPACITY_PER_DUPE.TOOLTIP"
+msgid "Limits the number of local action records stored for each Duplicant."
+msgstr "限制每位复制人的本地行动记录数量。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.ACTION_AGGREGATION_WINDOW_CYCLES.NAME"
+msgid "Repeated-action aggregation window"
+msgstr "重复行动聚合周期"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.ACTION_AGGREGATION_WINDOW_CYCLES.TOOLTIP"
+msgid "Repeated matching work within this many cycles is merged into one counted memory."
+msgstr "在该周期范围内重复完成相同工作时，合并为一条计数记忆。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAJOR_EVENT_MEMORY_ENABLED.NAME"
+msgid "Enable major colony events"
+msgstr "启用殖民地重大事件"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MAJOR_EVENT_MEMORY_ENABLED.TOOLTIP"
+msgid "Records confirmed colony events such as deaths and completed research."
+msgstr "记录死亡和科技完成等经过游戏确认的殖民地事件。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MEMORY_PRESET.NAME"
+msgid "Memory injection preset"
+msgstr "记忆注入预设"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MEMORY_PRESET.TOOLTIP"
+msgid "Light uses about 250, Balanced 520, and Rich 850 tokens. Custom uses the budget below."
+msgstr "轻量约 250、平衡约 520、丰富约 850 Token；自定义使用下方预算。"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MEMORY_TOKEN_BUDGET.NAME"
+msgid "Custom token budget"
+msgstr "自定义 Token 预算"
+
+msgctxt "STRINGS.ONITALK.OPTIONS.MEMORY_TOKEN_BUDGET.TOOLTIP"
+msgid "Used only with the Custom preset. Limits memory text injected into each request."
+msgstr "仅在预设选择“自定义”时生效；限制单次请求注入的记忆文本。"

@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>ONITalk</AssemblyName>
+    <RootNamespace>ONITalk</RootNamespace>
+    <Version>0.10.1</Version>
+    <DefineConstants>$(DefineConstants);MERGEDOWN</DefineConstants>
+    <!-- ONI ships compatible framework facades with different assembly versions. -->
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3277</MSBuildWarningsAsMessages>
+    <GameDir Condition="'$(GameDir)' == ''">$(ONI_GAME_DIR)</GameDir>
+    <GameManagedDir Condition="'$(GameManagedDir)' == '' and '$(GameDir)' != ''">$(GameDir)\OxygenNotIncluded_Data\Managed</GameManagedDir>
+    <ArtifactsDir>$(MSBuildProjectDirectory)\..\..\artifacts\ONITalk</ArtifactsDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ONITalk.Core\*.cs" Link="Core\%(Filename)%(Extension)" />
+    <Compile Include="..\..\vendor\PLib\PLibCore\**\*.cs"
+      Exclude="..\..\vendor\PLib\PLibCore\Properties\AssemblyInfo.cs"
+      Link="Vendor\PLibCore\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\..\vendor\PLib\PLibUI\**\*.cs"
+      Link="Vendor\PLibUI\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\..\vendor\PLib\PLibOptions\**\*.cs"
+      Link="Vendor\PLibOptions\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ONITalkTranslation Include="translations\*.po;translations\*.pot" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" HintPath="$(GameManagedDir)\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="Assembly-CSharp-firstpass" HintPath="$(GameManagedDir)\Assembly-CSharp-firstpass.dll" Private="false" />
+    <!-- Compile against the netstandard reference assembly; ONI provides the real DLL. -->
+    <Reference Include="0Harmony" HintPath="..\..\vendor\References\0Harmony.Ref.dll" Private="false" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(GameManagedDir)\Newtonsoft.Json.dll" Private="false" />
+    <Reference Include="FMODUnity" HintPath="$(GameManagedDir)\FMODUnity.dll" Private="false" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(GameManagedDir)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(GameManagedDir)\UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(GameManagedDir)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ImageConversionModule" HintPath="$(GameManagedDir)\UnityEngine.ImageConversionModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(GameManagedDir)\UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.InputLegacyModule" HintPath="$(GameManagedDir)\UnityEngine.InputLegacyModule.dll" Private="false" />
+    <Reference Include="UnityEngine.TextCoreFontEngineModule" HintPath="$(GameManagedDir)\UnityEngine.TextCoreFontEngineModule.dll" Private="false" />
+    <Reference Include="UnityEngine.TextRenderingModule" HintPath="$(GameManagedDir)\UnityEngine.TextRenderingModule.dll" Private="false" />
+    <Reference Include="UnityEngine.UI" HintPath="$(GameManagedDir)\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="UnityEngine.UIModule" HintPath="$(GameManagedDir)\UnityEngine.UIModule.dll" Private="false" />
+  </ItemGroup>
+
+  <Target Name="ValidateGameAssemblies" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(GameDir)' == '' and '$(GameManagedDir)' == ''"
+      Text="GameDir is missing. Build with -p:GameDir=&quot;C:\path\to\OxygenNotIncluded&quot; or set ONI_GAME_DIR." />
+    <Error Condition="!Exists('$(GameManagedDir)\Assembly-CSharp.dll')"
+      Text="Assembly-CSharp.dll was not found under $(GameManagedDir). Check GameDir." />
+  </Target>
+
+  <Target Name="PackageMod" AfterTargets="Build">
+    <MakeDir Directories="$(ArtifactsDir)" />
+    <MakeDir Directories="$(ArtifactsDir)\translations" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ArtifactsDir)" />
+    <Copy SourceFiles="@(ONITalkTranslation)"
+      DestinationFolder="$(ArtifactsDir)\translations" />
+    <Copy SourceFiles="mod.yaml;mod_info.yaml;config.example.json" DestinationFolder="$(ArtifactsDir)" />
+    <Copy SourceFiles="..\..\vendor\PLib\LICENSE"
+      DestinationFiles="$(ArtifactsDir)\PLib-LICENSE.txt" />
+    <Copy SourceFiles="..\..\vendor\PLib\NOTICE.md"
+      DestinationFiles="$(ArtifactsDir)\PLib-NOTICE.md" />
+    <Copy SourceFiles="..\..\LICENSE"
+      DestinationFiles="$(ArtifactsDir)\ONITalk-LICENSE.txt" />
+  </Target>
+</Project>

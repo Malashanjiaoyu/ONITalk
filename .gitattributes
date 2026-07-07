@@ -1,0 +1,12 @@
+* text=auto
+*.cs text eol=crlf
+*.ps1 text eol=crlf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.po text eol=lf
+*.pot text eol=lf
+*.dll binary
+*.png binary
+*.jpg binary
